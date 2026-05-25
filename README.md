@@ -8,7 +8,7 @@ At its core, the game world is composed of interconnected worlds, zones, and roo
 
 The combat system is tick-based and supports melee combat, spellcasting, abilities, status effects, AoE effects, directional attacks, threat management, and reactive combat hooks. Effects are highly modular, allowing buffs, debuffs, room effects, movement restrictions, spell interception, damage reflection, and stat modification through a unified effect framework.
 
-Professions define gameplay identity, with systems already supporting spellcasters, martial abilities, and a Bard archetypes.  Bards are built around persistent songs rather than traditional spellcasting. Bard songs function as maintained effects powered by a voice resource system, enabling party buffs, debuffs, battlefield control, illumination, silence effects, and morale-based support mechanics.
+Professions define gameplay identity, with systems already supporting spellcasters (both damage and healing types), martial abilities, and a Bard archetypes.  Bards are built around persistent songs rather than traditional spellcasting. Bard songs function as maintained effects powered by a voice resource system, enabling party buffs, debuffs, battlefield control, illumination, silence effects, and morale-based support mechanics.
 
 The project also includes extensive builder and administration tooling:
 
