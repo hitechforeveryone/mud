@@ -1,3 +1,5 @@
+## Current Version 07025
+
 This JAVA-based MUD project is a classic-style, systems-heavy multiplayer text RPG built around persistent worlds, dynamic combat, immersive roleplay mechanics, and deeply modular content creation tools. The design philosophy leans toward old-school sandbox MUDs, but with modernized internal systems and cleaner extensibility.
 
 At its core, the game world is composed of interconnected worlds, zones, and rooms featuring dynamic weather, seasonal changes, lighting systems, scripted events, wandering NPCs, and cross-zone travel. Rooms can contain environmental effects, directional exits, doors, and layered atmospheric mechanics that affect gameplay and exploration.
