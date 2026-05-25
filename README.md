@@ -9,8 +9,8 @@ Professions define gameplay identity, with systems already supporting spellcaste
 The project also includes extensive builder and administration tooling:
 
 * Zone editors
-* Mob editors
-* Player editors
+* Mob/Player editors
+* Object editors
 * Help file systems
 * Scripted triggers/events
 * Cross-zone exit creation
