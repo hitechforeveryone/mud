@@ -35,4 +35,4 @@ Overall, the project feels like a modern reinterpretation of classic Diku/Circle
 
 ## Please Compile to Run/play
 * /src/server/Server.java - This is the server that runs the mud and that clients may connect to.
-* /src/client/Client.java (to play from your commandline)
+* /src/client/Client.java - optional, to play from your commandline or IDE console
