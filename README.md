@@ -1,6 +1,6 @@
 ## Current Version 7025
 
-## Java code-base, flat-file data storage. 
+# Java code-base, flat-file data storage. 
 
 This JAVA-based MUD project is a classic-style, systems-heavy multiplayer text RPG built around persistent worlds, dynamic combat, immersive roleplay mechanics, and deeply modular content creation tools. The design philosophy leans toward old-school sandbox MUDs, but with modernized internal systems and cleaner extensibility.
 
