@@ -36,5 +36,5 @@ Overall, the project feels like a modern reinterpretation of classic Diku/Circle
 
 
 ## Please Compile to Run/play
-* /src/server/Server.java - This is the server that runs the MUD and that clients may connect to.
+* /src/server/Server.java - This is the server that runs the MUD and that clients may connect to. Requires Read/Write privs on your server for File I/O (player saves, new/edit worlds, zones, rooms, mobs, objs, scripts)
 * /src/client/Client.java - optional, to play from your commandline or IDE console.
