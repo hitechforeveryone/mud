@@ -12,7 +12,7 @@ At its core, AxiomMUD models worlds as interconnected zones and rooms featuring 
 
 The combat system is tick-based and supports melee combat, spellcasting, abilities, status effects, AoE effects, directional attacks, threat management, and reactive combat hooks. Effects are highly modular, allowing buffs, debuffs, room effects, movement restrictions, spell interception, damage reflection, and stat modification through a unified effect framework.
 
-Professions define gameplay identity, with systems supporting spellcasters, martial combatants, and specialized archetypes. The Bard profession uses a unique maintained-song system rather than traditional spellcasting. Bard songs function as persistent effects powered by a voice resource system, enabling party support, debuffs, battlefield control, illumination, silence effects, and morale-based mechanics.
+Professions define gameplay identity, with systems supporting spellcasters, martial combatants, and specialized archetypes. The Bard profession uses a unique maintained-song system rather than traditional spellcasting. 
 
 AxiomMUD includes extensive builder and administration tooling:
 
