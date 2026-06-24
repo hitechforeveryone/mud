@@ -1,40 +1,48 @@
-## Current Version 7026
+# AxiomMUD Engine
 
-* Java code-base, flat-file data storage. 
+## Current Version 7027
 
-This JAVA-based MUD project is a classic-style, systems-heavy multiplayer text RPG built around persistent worlds, dynamic combat, immersive roleplay mechanics, and deeply modular content creation tools. The design philosophy leans toward old-school sandbox MUDs, but with modernized internal systems and cleaner extensibility.
+* Java code-base, flat-file data storage.
 
-At its core, the game world is composed of interconnected worlds, zones, and rooms featuring dynamic weather, seasonal changes, lighting systems, scripted events, wandering NPCs, and cross-zone travel. Rooms can contain environmental effects, directional exits, doors, and layered atmospheric mechanics that affect gameplay and exploration.
+AxiomMUD is a classic-style, systems-heavy multiplayer text RPG engine built around persistent worlds, dynamic simulation, immersive roleplay mechanics, and modular content creation tools. The engine follows the philosophy of old-school sandbox MUDs while introducing modernized internal systems, cleaner abstractions, and extensible architecture.
+
+The engine is designed to support multiple persistent worlds. Individual worlds, such as the current Tithrius world implementation, are built using the engine's systems for zones, rooms, NPCs, objects, scripts, combat, and environmental simulation.
+
+At its core, AxiomMUD models worlds as interconnected zones and rooms featuring dynamic weather, seasonal changes, lighting systems, scripted events, wandering NPCs, and cross-zone travel. Rooms support environmental effects, directional exits, doors, and layered atmospheric mechanics that influence exploration and gameplay.
 
 The combat system is tick-based and supports melee combat, spellcasting, abilities, status effects, AoE effects, directional attacks, threat management, and reactive combat hooks. Effects are highly modular, allowing buffs, debuffs, room effects, movement restrictions, spell interception, damage reflection, and stat modification through a unified effect framework.
 
-Professions define gameplay identity, with systems already supporting spellcasters (both damage and healing types), martial abilities, and a Bard archetypes.  Bards are built around persistent songs rather than traditional spellcasting. Bard songs function as maintained effects powered by a voice resource system, enabling party buffs, debuffs, battlefield control, illumination, silence effects, and morale-based support mechanics.
+Professions define gameplay identity, with systems supporting spellcasters, martial combatants, and specialized archetypes. The Bard profession uses a unique maintained-song system rather than traditional spellcasting. Bard songs function as persistent effects powered by a voice resource system, enabling party support, debuffs, battlefield control, illumination, silence effects, and morale-based mechanics.
 
-The project also includes extensive builder and administration tooling:
+AxiomMUD includes extensive builder and administration tooling:
 
-* World, Zone, Room editors
-* Mob/Player editors
+* World editors
+* Zone editors
+* Room editors
+* Mob and player editors
 * Object editors
 * Help file systems
 * Scripted triggers/events
 * Cross-zone exit creation
 * Searchable help indexes
-* Dynamic mob behaviors such as sentries, wandering, and combat AI
+* Dynamic mob behavior configuration
 
-NPC AI is behavior-flag driven, allowing mobs to cast spells, sing songs, patrol, defend areas, retaliate intelligently, and respond to environmental or scripted conditions.
+NPC AI is behavior-flag driven, allowing mobs to cast spells, sing songs, patrol areas, defend territory, retaliate intelligently, and respond to environmental or scripted conditions.
 
-Narratively, the world emphasizes atmosphere, mystery, and immersive exploration rather than purely mechanical progression. The setting of Tithrius includes regions such as the Misty Forest, Dagger Hills, and Withering Woods, each designed with environmental identity and interconnected lore.
+The Tithrius world built on top of AxiomMUD emphasizes atmosphere, mystery, and immersive exploration rather than purely mechanical progression. Regions such as the Misty Forest, Dagger Hills, and Withering Woods are designed with distinct environmental identities and interconnected lore.
 
-Technically, the architecture is highly object-oriented and extensible:
+Technically, AxiomMUD is designed as an object-oriented and extensible engine:
 
 * Spells, Songs, Effects, and Behaviors are modularized
 * Tick systems drive persistence and world simulation
 * Effects self-register and self-cleanup
-* Systems are designed for future professions, mechanics, and content expansion
+* Content is separated from core engine systems
+* Architecture supports future worlds, professions, mechanics, and expansions
 
-Overall, the project feels like a modern reinterpretation of classic Diku/Circle-style MUD design philosophy, but with stronger systemic cohesion, cleaner abstractions, and a focus on immersive persistent-world simulation rather than purely combat grinding.
+Overall, AxiomMUD is a modern reinterpretation of classic Diku/Circle-style MUD design philosophy, focusing on systemic cohesion, maintainable architecture, and immersive persistent-world simulation rather than purely combat grinding.
 
+## Please Compile to Run/Play
 
-## Please Compile to Run/play
-* /src/server/Server.java - This is the server that runs the MUD and that clients may connect to. Requires Read/Write privs on your server for File I/O (player saves, new/edit worlds, zones, rooms, mobs, objs, scripts)
-* /src/client/Client.java - optional, to play from your commandline or IDE console.
+* `/src/server/Server.java` - Runs the AxiomMUD server that clients connect to. Requires Read/Write permissions for file operations including player saves, world creation/editing, zones, rooms, mobs, objects, and scripts.
+
+* `/src/client/Client.java` - Optional command-line client for connecting and playing through a terminal or IDE console.
